@@ -1,9 +1,11 @@
 @import "variables";
 @import "variables_bootstrap";
 
+@import 'bootstrap-sprockets';
 @import "bootstrap";
 
 @import "blacklight/blacklight";
+@import 'blacklight_marc';
 
 @import "header";
 @import "footer";
