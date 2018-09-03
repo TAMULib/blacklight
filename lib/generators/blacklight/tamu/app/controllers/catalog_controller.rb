@@ -1,5 +1,5 @@
 # frozen_string_literal: true
-class <%= controller_name.classify %>Controller < ApplicationController
+class CatalogController < ApplicationController
 
   include Blacklight::Catalog
 
