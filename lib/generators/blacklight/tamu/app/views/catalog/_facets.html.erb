@@ -2,6 +2,10 @@
 <% if has_facet_values?  %>
 <div id="facets" class="facets sidenav">
 
+  <% if get_collection %>
+    <div class="well collection-title"><h2><% get_collection %></h2></div>
+  <% end %>
+
   <div class="top-panel-heading panel-heading">
     <button type="button" class="facets-toggle" data-toggle="collapse" data-target="#facet-panel-collapse">
       <span class="sr-only">Toggle facets</span>
