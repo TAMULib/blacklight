@@ -5,7 +5,7 @@ module ApplicationHelper
 
   def get_collection
     if (params[:f] && params[:f][:collection])
-      return params[:f][:collection]
+      return params[:f][:collection][0]
     end
   end
 end
