@@ -139,6 +139,12 @@
         min-height: auto;
     }
     #header-navbar .navbar-brand {
-    	padding: 15px 15px;
+        padding: 15px 15px;
     }
+}
+
+.navbar-right {
+  .navbar-nav>li>a {
+    color: #eee;
+  }
 }
