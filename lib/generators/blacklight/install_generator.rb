@@ -110,5 +110,10 @@ EOF
     def add_routes
       route "mount Blacklight::Engine => '/'"
     end
+
+    def add_osd_viewer
+      gem 'blacklight-gallery', '>= 0.3.0'
+      generate 'blacklight_gallery:install'
+    end
   end
 end
