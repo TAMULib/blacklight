@@ -35,6 +35,9 @@ class CatalogController < ApplicationController
     #  # q: '{!term f=id v=$id}'
     #}
 
+    # config value to activate gallery view
+    config.view.gallery.partials = [:index_header, :index]
+
     # solr field configuration for search results/index views
     config.index.title_field = 'title_display'
     config.index.display_type_field = 'format'
