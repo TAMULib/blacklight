@@ -40,6 +40,11 @@ module Blacklight
       generate solr_generator, generator_options
     end
 
+    def add_osd_viewer
+      gem 'blacklight-gallery', '>= 0.3.0'
+      generate 'blacklight_gallery:install'
+    end
+
     def bundle_install
       Bundler.with_clean_env do
         run "bundle install"
@@ -111,9 +116,5 @@ EOF
       route "mount Blacklight::Engine => '/'"
     end
 
-    def add_osd_viewer
-      gem 'blacklight-gallery', '>= 0.3.0'
-      generate 'blacklight_gallery:install'
-    end
   end
 end
